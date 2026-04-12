@@ -1,0 +1,280 @@
+.backdrop-products {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 300ms ease, visibility 300ms ease;
+}
+
+.backdrop-products.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal-products {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    height: 991px;
+    border: 2px solid $card-icecoffe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        font-family: Seymour One;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+.btn-close-products {
+    border-style: none;
+    align-self: flex-end;
+    font-size: 30px;
+}
+
+.products-images {
+
+    .prewiew-products-icecream {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+
+        img {
+            width: 132px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .products-icecream-text-div {
+            width: 132px;
+            height: 136px;
+            border: 2px solid $card-icecream;
+            border-radius: 15px;
+            font-family: Montserrat;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 4%;
+            text-align: center;
+            text-transform: uppercase;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            position: relative;
+            bottom: 85px;
+            z-index: 1;
+        }
+    }
+
+    .prewiew-products-coffee {
+        position: relative;
+        bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        img {
+            width: 132px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .products-coffee-text-div {
+            width: 132px;
+            height: 136px;
+            background-color: $card-icecoffe;
+            border-radius: 15px;
+            font-family: Montserrat;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 4%;
+            text-align: center;
+            text-transform: uppercase;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            position: relative;
+            bottom: 85px;
+            z-index: 1;
+        }
+    }
+
+    .prewiew-products-milkshakes {
+        position: relative;
+        bottom: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        img {
+            width: 132px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .products-milkshakes-text-div {
+            width: 132px;
+            height: 136px;
+            border: 2px solid $card-milkshakes;
+            border-radius: 15px;
+            font-family: Montserrat;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 4%;
+            text-align: center;
+            text-transform: uppercase;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            position: relative;
+            bottom: 85px;
+            z-index: 1;
+        }
+    }
+}
+
+.name-input-products {
+    position: relative;
+    bottom: 170px;
+    width: 214px;
+    padding: 5px;
+    border-style: none;
+    border: 1px solid $card-icecream;
+    border-radius: 10px;
+}
+
+.phone-input-products {
+    position: relative;
+    bottom: 160px;
+    width: 214px;
+    padding: 5px;
+    border-style: none;
+    border: 1px solid $card-icecream;
+    border-radius: 10px;
+}
+
+.comment-input-products {
+    position: relative;
+    bottom: 150px;
+    width: 214px;
+    height: 55;
+    padding: 5px;
+    border-style: none;
+    border: 1px solid $card-icecream;
+    border-radius: 10px;
+}
+
+.submit-modal {
+    position: relative;
+    bottom: 140px;
+    width: 114px;
+    height: 42px;
+    background-color: $card-icecoffe;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    border-style: none;
+    border-radius: 10px;
+}
+
+@media (min-width:768px) {
+
+    .modal-products {
+        width: 568px;
+        height: 644px;
+
+        h1 {
+            position: relative;
+            bottom: 20px;
+            font-family: Seymour One;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: middle;
+        }
+    }
+
+    .products-images {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+
+        .prewiew-products-milkshakes {
+            position: relative;
+            bottom: 0px;
+        }
+
+        .prewiew-products-coffee {
+            position: relative;
+            bottom: 0px;
+        }
+
+        .prewiew-products-icecream {
+            margin-top: 0px;
+        }
+    }
+
+    .name-input-products {
+        position: relative;
+        bottom: 20px;
+        width: 368px;
+        height: 42px;
+    }
+
+    .phone-input-products{
+        position: relative;
+        bottom: 0px;
+        width: 368px;
+        height: 42px;
+    }
+
+    .comment-input-products{
+        position: relative;
+        bottom: 0px;
+        width: 368px;
+        height: 84px;
+        margin-top: 20px;
+    }
+
+    .submit-modal{
+        position: relative;
+        bottom: 0px;
+        margin-top: 10px;
+        
+    }
+}
