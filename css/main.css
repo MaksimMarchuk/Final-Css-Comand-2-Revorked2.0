@@ -1233,6 +1233,195 @@ body {
     margin-top: 10px;
   }
 }
+.backdrop-ice-cream {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 300ms ease, visibility 300ms ease;
+}
+
+.backdrop-ice-cream.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-ice-cream {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+  height: 968px;
+  border: 2px solid #EFD478;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal-ice-cream .btn-close-ice-cream {
+  border-style: none;
+  align-self: flex-end;
+  font-size: 30px;
+}
+.modal-ice-cream h1 {
+  font-family: Seymour One;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+}
+.modal-ice-cream form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal-ice-cream form .ice-cream-composition-div {
+  display: flex;
+}
+.modal-ice-cream form .ice-cream-composition-div .ice-cream-composition-card {
+  margin-top: 20px;
+  width: 53px;
+  height: 72px;
+  border-radius: 40px;
+  border: 2px solid #84A178;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-ice-cream form .ice-cream-composition-div .ice-cream-composition-card .ice-cream-composition-top-text {
+  background-color: #84A178;
+  border-radius: 20px;
+  width: 43px;
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-ice-cream form .ice-cream-composition-div .ice-cream-composition-card .ice-cream-composition-top-text p {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 10px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0;
+}
+.modal-ice-cream form .ice-cream-composition-div .ice-cream-composition-card h3 {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 10px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+}
+.modal-ice-cream form .ice-cream-ingredients-div {
+  margin-top: 30px;
+}
+.modal-ice-cream form .ice-cream-ingredients-div h1 {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+}
+.modal-ice-cream form .ice-cream-ingredients-div .ice-cream-ingredients-text {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+.modal-ice-cream form .ice-cream-ingredients-div .ice-cream-ingredients-text .ice-cream-ingredients-name {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 176%;
+  letter-spacing: 4%;
+  text-align: start;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.modal-ice-cream form .ice-cream-ingredients-div .ice-cream-ingredients-text .ice-cream-ingredients-name p {
+  margin: 0;
+}
+.modal-ice-cream form .ice-cream-ingredients-div .ice-cream-ingredients-text .ice-cream-ingredients-kcal {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.modal-ice-cream form .ice-cream-ingredients-div .ice-cream-ingredients-text .ice-cream-ingredients-kcal h3 {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 176%;
+  letter-spacing: 4%;
+  text-align: end;
+  vertical-align: middle;
+  margin: 0;
+}
+.modal-ice-cream form .name-input-ice-cream {
+  width: 230px;
+  height: 42px;
+  padding: 5px;
+  border-style: none;
+  border: 1px solid #AEC6A5;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+.modal-ice-cream form .phone-input-ice-cream {
+  width: 230px;
+  height: 42px;
+  padding: 5px;
+  border-style: none;
+  border: 1px solid #AEC6A5;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+.modal-ice-cream form .comment-input-ice-cream {
+  width: 230px;
+  height: 74px;
+  padding: 5px;
+  border-style: none;
+  border: 1px solid #AEC6A5;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+.modal-ice-cream form .submit-modal-ice-cream {
+  width: 132px;
+  height: 42px;
+  background-color: #F8D24E;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  border-style: none;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
 .product-section {
   padding: 60px 20px;
   text-align: center;
