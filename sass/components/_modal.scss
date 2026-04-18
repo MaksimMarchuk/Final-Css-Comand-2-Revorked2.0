@@ -497,3 +497,215 @@
         }
     }
 }
+
+@media(min-width:768px) {
+    .modal-ice-cream {
+        width: 586px;
+        height: 996px;
+
+        h1 {
+            font-family: Seymour One;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        form {
+
+            .ice-cream-composition-div {
+
+                .ice-cream-composition-card {
+                    width: 65px;
+                    height: 90px;
+
+                    .ice-cream-composition-top-text {
+                        width: 53px;
+                        height: 53px;
+                        border-radius: 30px;
+
+                        p {
+                            font-family: Montserrat;
+                            font-weight: 500;
+                            font-style: Medium;
+                            font-size: 12px;
+                            line-height: 28px;
+                            letter-spacing: 0%;
+                            text-align: center;
+                            vertical-align: middle;
+                        }
+                    }
+
+                    h3 {
+                        font-family: Montserrat;
+                        font-weight: 400;
+                        font-style: Regular;
+                        font-size: 12px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        text-align: center;
+                        vertical-align: middle;
+                    }
+                }
+            }
+
+            .ice-cream-ingredients-div {
+
+                h1 {
+                    font-family: Montserrat;
+                    font-weight: 500;
+                    font-style: Medium;
+                    font-size: 20px;
+                    line-height: 28px;
+                    letter-spacing: 0%;
+                    text-align: center;
+                    vertical-align: middle;
+                }
+
+                .ice-cream-ingredients-text {
+                    gap: 300px;
+                }
+            }
+
+            .name-input-ice-cream {
+                width: 368px;
+                height: 42px;
+                margin-top: 50px;
+            }
+
+            .phone-input-ice-cream {
+                width: 368px;
+                height: 42px;
+            }
+
+            .comment-input-ice-cream {
+                width: 368px;
+                height: 84px;
+            }
+
+            .submit-modal-ice-cream {
+                width: 121px;
+                height: 42px;
+            }
+        }
+    }
+}
+
+.backdrop-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 300ms ease, visibility 300ms ease;
+}
+
+.backdrop-video.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal-video {
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    width: 280px;
+    height: 459px;
+    border: 2px solid $card-icecoffe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .btn-close-video {
+        height: 30px;
+        border-style: none;
+        align-self: flex-end;
+        font-size: 30px;
+    }
+
+    h1 {
+        font-family: Seymour One;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .video-div {
+            margin-top: 10px;
+        }
+
+        .video-text {
+            margin-top: 15px;
+
+            p {
+                margin: 0;
+                font-family: Montserrat;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 140%;
+                letter-spacing: 0%;
+                width: 224px;
+            }
+        }
+    }
+}
+
+@media(min-width:768px) {
+    .modal-video {
+        width: 568px;
+        height: 449px;
+
+        h1 {
+            font-family: Seymour One;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        form {
+
+            .video-div {
+                margin-top: 20px;
+
+                iframe {
+                    width: 448px;
+                    height: 205px;
+                }
+            }
+
+            .video-text {
+                margin-top: 15px;
+
+                p {
+                    font-family: Montserrat;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 140%;
+                    letter-spacing: 0%;
+                    width: 448px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,101 @@
+.bi-arrow-right:hover {
+    color: #fff;
+    text-shadow:
+        0 0 5px rgb(0, 253, 127),
+        0 0 10px rgb(0, 253, 127),
+        0 0 20px rgb(0, 253, 127),
+        0 0 40px rgb(0, 253, 127);
+    animation: neonFlicker 4s infinite;
+    animation-duration: 4s;
+
+    @keyframes neonFlicker {
+        from {
+            text-shadow:
+                0 0 10px rgb(81, 240, 147),
+                0 0 15x rgb(2, 129, 19);
+        }
+
+        to {
+            text-shadow:
+                0 0 20px rgb(45, 196, 90),
+                0 0 40px rgb(73, 189, 82),
+                0 0 80px rgb(26, 138, 4);
+        }
+    }
+}
+.header-button {
+        transition: 1500ms;
+        transition-duration: 0.8s;
+}
+.header-button:hover {
+    transform: scale(1.2);
+    color: rgb(0, 247, 255);
+}
+.nav-button {
+    transition: 1500ms;
+    transition-duration: 0.8s;
+}
+.nav-button:hover {
+    transform: scale(1.2);
+    color: rgb(0, 247, 255);
+}
+.product-text {
+    transition: 1500ms;
+    transition-duration: 0.9s;
+}
+.product-text:hover {
+    transform: scale(1.5);
+}
+.animation-hero {
+    transition: 1500ms;
+     transition-duration: 2s;
+}
+.animation-hero:hover {
+    transform: scale(1.0);
+    transform: rotate(360deg);
+}
+.arrow {
+transition: 1500ms;
+    transition-duration: 2s;
+}
+.arrow:hover {
+    transform: scale(1.0);
+    transform: translateX(35px);
+}
+.button-explain {
+    transition: 1500ms;
+    transition-duration: 0.8s;
+}
+
+.button-explain:hover {
+    transform: scale(1.2);
+    color: rgb(0, 247, 255);
+}
+.image-mini {
+    transition: 1500ms;
+    transition-duration: 0.8s;
+}
+.image-mini:hover {
+    transform: scale(1.2);
+}
+.nav-logo {
+        transition: 1500ms;
+         transition-duration: 0.8s;
+}
+.nav-logo:hover {
+    transform: scale(1.2);
+}
+.bi-circle-fill {
+            transition: 1500ms;
+                transition-duration: 0.8s;
+}
+.bi-circle-fill:hover {
+    transform: scale(1.2);
+}
+.bi-list {
+    transition: 1500ms;
+    transition-duration: 0.8s;
+}
+.bi-list:hover {
+        transform: scale(1.8);
+}

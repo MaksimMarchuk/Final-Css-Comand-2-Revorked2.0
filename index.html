@@ -149,7 +149,8 @@
                             </div>
                         </div>
                         <div class="btn-direction">
-                            <button class="button-explain">Read more <i class="bi bi-caret-right-fill"></i></button>
+                            <button data-modal-open-3 class="button-explain">Read more <i
+                                    class="bi bi-caret-right-fill"></i></button>
                         </div>
                     </div>
                 </div>
@@ -367,10 +368,30 @@
                 </label>
                 <label>
                     <div class="ice-cream-composition-div">
-                        <div class="ice-cream-composition-card"><div class="ice-cream-composition-top-text"><p>320</p></div><h3>kcal</h3></div>
-                        <div class="ice-cream-composition-card"><div class="ice-cream-composition-top-text"><p>4g</p></div><h3>Protein...</h3></div>
-                        <div class="ice-cream-composition-card"><div class="ice-cream-composition-top-text"><p>8,2g</p></div><h3>Fats</h3></div>
-                        <div class="ice-cream-composition-card"><div class="ice-cream-composition-top-text"><p>40,4g</p></div><h3>Carbs</h3></div>
+                        <div class="ice-cream-composition-card">
+                            <div class="ice-cream-composition-top-text">
+                                <p>320</p>
+                            </div>
+                            <h3>kcal</h3>
+                        </div>
+                        <div class="ice-cream-composition-card">
+                            <div class="ice-cream-composition-top-text">
+                                <p>4g</p>
+                            </div>
+                            <h3>Protein...</h3>
+                        </div>
+                        <div class="ice-cream-composition-card">
+                            <div class="ice-cream-composition-top-text">
+                                <p>8,2g</p>
+                            </div>
+                            <h3>Fats</h3>
+                        </div>
+                        <div class="ice-cream-composition-card">
+                            <div class="ice-cream-composition-top-text">
+                                <p>40,4g</p>
+                            </div>
+                            <h3>Carbs</h3>
+                        </div>
                     </div>
                 </label>
                 <label>
@@ -419,6 +440,34 @@
             </form>
         </div>
     </div>
+
+    <div class="backdrop-video is-hidden" data-modal-3>
+        <div class="modal-video">
+            <button class="btn-close-video" data-modal-close-3><i class="bi bi-x"></i></button>
+            <h1>How it’s made?</h1>
+            <form>
+                <label>
+                    <div class="video-div">
+                        <iframe width="224" height="199"
+                            src="https://www.youtube.com/embed/bDDazMFfW2g?si=xCHwXDvpe47Vy0Gm"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </div>
+                </label>
+                <label>
+                    <div class="video-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et</p>
+                    </div>
+                </label>
+            </form>
+        </div>
+    </div>
+
+
 
     <script src="modal.js"></script>
 </body>
