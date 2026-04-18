@@ -494,6 +494,37 @@ body {
   padding: 30px;
 }
 
+.explain-div {
+  height: 1624px;
+  background-color: #84A178;
+}
+
+.quantity-text {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  leading-trim: NONE;
+  line-height: 170%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #FCFCFC;
+}
+
+.text-directions {
+  text-align: start;
+  width: 220px;
+}
+
+.explain-animal {
+  width: 280px;
+}
+
+.explain-main-text-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (min-width: 480px) {
   .explain-div {
     height: 1624px;
@@ -515,6 +546,11 @@ body {
   }
   .explain-animal {
     width: 280px;
+  }
+  .explain-main-text-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (min-width: 768px) {
@@ -553,13 +589,16 @@ body {
     display: flex;
     justify-content: start;
   }
+  .lorem-expalin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
 }
 @media (min-width: 1200px) {
   .explain-div {
     height: 1228px;
-    angle: 0 deg;
-    opacity: 1;
-    angle: 0 deg;
     opacity: 1;
     color: #84A178;
   }
@@ -567,6 +606,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: start;
+    font-size: 14px;
   }
   .text-directions {
     display: flex;
@@ -1765,7 +1805,6 @@ body {
 
 .header-button:hover {
   transform: scale(1.2);
-  color: rgb(0, 247, 255);
 }
 
 .nav-button {
@@ -1774,27 +1813,7 @@ body {
 }
 
 .nav-button:hover {
-  transform: scale(1.2);
-  color: rgb(0, 247, 255);
-}
-
-.product-text {
-  transition: 1500ms;
-  transition-duration: 0.9s;
-}
-
-.product-text:hover {
-  transform: scale(1.5);
-}
-
-.animation-hero {
-  transition: 1500ms;
-  transition-duration: 2s;
-}
-
-.animation-hero:hover {
-  transform: scale(1);
-  transform: rotate(360deg);
+  transform: translateY(10px);
 }
 
 .arrow {
@@ -1809,17 +1828,16 @@ body {
 
 .button-explain {
   transition: 1500ms;
-  transition-duration: 0.8s;
+  transition-duration: 0.5s;
 }
 
 .button-explain:hover {
   transform: scale(1.2);
-  color: rgb(0, 247, 255);
 }
 
 .image-mini {
   transition: 1500ms;
-  transition-duration: 0.8s;
+  transition-duration: 0.5s;
 }
 
 .image-mini:hover {
@@ -1828,7 +1846,7 @@ body {
 
 .nav-logo {
   transition: 1500ms;
-  transition-duration: 0.8s;
+  transition-duration: 0.5s;
 }
 
 .nav-logo:hover {
@@ -1837,7 +1855,7 @@ body {
 
 .bi-circle-fill {
   transition: 1500ms;
-  transition-duration: 0.8s;
+  transition-duration: 0.5s;
 }
 
 .bi-circle-fill:hover {
@@ -1846,9 +1864,80 @@ body {
 
 .bi-list {
   transition: 1500ms;
-  transition-duration: 0.8s;
+  transition-duration: 0.5s;
 }
 
 .bi-list:hover {
   transform: scale(1.8);
+}
+
+.hero-btn {
+  transition: 1500ms;
+  transition-duration: 0.5s;
+}
+
+.hero-btn:hover {
+  transform: translateY(-10px);
+  color: gray;
+}
+
+.hero-href {
+  transition: 1500ms;
+  transition-duration: 0.8s;
+  color: grey;
+}
+
+.hero-href:hover {
+  transform: scale(1.1);
+  color: grey;
+}
+
+.arrow {
+  transition: 1500ms;
+  transition-duration: 1s;
+}
+
+.arrow:hover {
+  transform: rotate(360deg);
+  color: gray;
+}
+
+.location-first-btn {
+  transition: 1500ms;
+  transition-duration: 1s;
+}
+
+.location-first-btn:hover {
+  transform: scale(1.1);
+  color: grey;
+}
+
+.location-two-btn {
+  transition: 1500ms;
+  transition-duration: 1s;
+}
+
+.location-two-btn:hover {
+  transform: scale(1.1);
+  color: grey;
+}
+
+.submit-modal-ice-cream {
+  transition: 1500ms;
+  transition-duration: 1s;
+}
+
+.submit-modal-ice-cream:hover {
+  transform: translateY(-10px);
+  color: grey;
+}
+
+.submit-modal {
+  transition: 1500ms;
+  transition-duration: 1s;
+}
+
+.submit-modal:hover {
+  transform: translateY(-10px);
+  color: grey;
 }
