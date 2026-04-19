@@ -709,3 +709,125 @@
         }
     }
 }
+
+.backdrop-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 250ms ease, visibility 250ms ease;
+
+    &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+.modal-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    background-color: $sections-background;
+    padding: 40px 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .modal-nav-logo {
+        margin-right: 180px;
+    }
+
+    // крестик
+    .modal-close-button {
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .modal-nav-menu {
+
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        li {
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &:nth-child(2) {
+            color: $text-support;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: 700;
+            color: white;
+        }
+    }
+
+    .modal-button {
+        width: 170px;
+        padding: 10px;
+        background-color: #f8d24e;
+        border: none;
+        border-radius: 10px;
+        font-weight: 700;
+    }
+}
+
+@media (min-width:480px) {
+    .modal-menu {
+        padding: 100px 20px;
+    }
+
+    .modal-nav-logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .modal-close-button {
+        top: 20px;
+        right: 20px;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .modal-button {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width:768px) {
+    .modal-menu {
+        width: 500px;
+        height: 600px;
+    }
+
+    .modal-button {
+        display: none;
+    }
+}

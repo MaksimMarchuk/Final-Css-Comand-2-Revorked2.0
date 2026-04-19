@@ -38,7 +38,7 @@
                 </div>
 
                 <div class="nav-btns-div">
-                    <li class="nav-element"><i class="bi bi-list"></i></li>
+                    <li class="nav-element" data-modal-open-4><i class="bi bi-list"></i></li>
                     <li><button class="nav-button" data-modal-open>Buy now <i class="bi bi-chevron-right"></i></button>
                     </li>
                 </div>
@@ -478,7 +478,23 @@
         </div>
     </div>
 
-
+    <div class="backdrop-menu is-hidden" data-modal-4>
+        <div class="modal-menu">
+            <div class="modal-nav-logo">
+                <img src="./src/img/iceCream-logo.webp" alt="logo">
+            </div>
+            <button data-modal-close-4 class="modal-close-button"><i class="bi bi-x"></i></button>
+            <nav class="modal-nav-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="modal-active">How it's made?</a></li>
+                    <li><a href="#">Our products</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="modal-button">Buy now<i class="bi bi-chevron-right"></i></button>
+        </div>
+    </div>
 
     <script src="modal.js"></script>
 </body>
