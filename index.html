@@ -114,7 +114,7 @@
                     <h3>milkshakes</h3>
                     <p>Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other
                         sweets of your choice</p>
-                    <img class="arrow" src="src/img/Arrow.png" alt="">
+                    <img class="arrow" src="src/img/Arrow.png" alt="" data-modal-open-5>
                 </div>
             </div>
         </section>
@@ -493,6 +493,91 @@
                 </ul>
             </nav>
             <button class="modal-button">Buy now<i class="bi bi-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <div class="backdrop-milkshake is-hidden" data-modal-5>
+        <div class="modal-milkshake">
+            <button class="btn-close-milkshake" data-modal-close-5><i class="bi bi-x"></i></button>
+            <h1>Milkshake</h1>
+            <form>
+                <label>
+                    <div class="milkshake-head-img">
+                        <img src="./src/img/milkshakes-card.png" alt="" width="120px">
+                    </div>
+                </label>
+                <label>
+                    <div class="milkshake-composition-div">
+                        <div class="milkshake-composition-card">
+                            <div class="milkshake-composition-top-text">
+                                <p>280</p>
+                            </div>
+                            <h3>kcal</h3>
+                        </div>
+                        <div class="milkshake-composition-card">
+                            <div class="milkshake-composition-top-text">
+                                <p>9g</p>
+                            </div>
+                            <h3>Protein...</h3>
+                        </div>
+                        <div class="milkshake-composition-card">
+                            <div class="milkshake-composition-top-text">
+                                <p>6g</p>
+                            </div>
+                            <h3>Fats</h3>
+                        </div>
+                        <div class="milkshake-composition-card">
+                            <div class="milkshake-composition-top-text">
+                                <p>38g</p>
+                            </div>
+                            <h3>Carbs</h3>
+                        </div>
+                    </div>
+                </label>
+                <label>
+                    <div class="milkshake-ingredients-div">
+                        <h1>Ingredients</h1>
+                        <div class="milkshake-ingredients-text">
+                            <div class="milkshake-ingredients-name">
+                                <p>Milk</p>
+                                <p>Ice Cream (flavor of your choice)</p>
+                                <p>Ice cubes</p>
+                                <p>Syrup (flavor of your choice)</p>
+                                <p>Fresh berries</p>
+                                <p>Whipped cream</p>
+                            </div>
+                            <div class="milkshake-ingredients-kcal">
+                                <h3>150ml</h3>
+                                <h3>140g</h3>
+                                <h3>30g</h3>
+                                <h3>10ml</h3>
+                                <h3>30g</h3>
+                                <h3>40g</h3>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+                <label>
+                    <div>
+                        <input type="text" placeholder="Name" required class="name-input-milkshake">
+                    </div>
+                </label>
+                <label>
+                    <div>
+                        <input type="tel" name="phone" pattern="^\+380\d{9}$" required placeholder="Phone"
+                            class="phone-input-milkshake">
+                    </div>
+                </label>
+                <label>
+                    <div>
+                        <textarea name="comment" required placeholder="Comment"
+                            class="comment-input-milkshake"></textarea>
+                    </div>
+                </label>
+                <div>
+                    <button type="submit" class="submit-modal-milkshake">Submit</button>
+                </div>
+            </form>
         </div>
     </div>
 

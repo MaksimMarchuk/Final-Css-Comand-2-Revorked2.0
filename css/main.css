@@ -1918,6 +1918,280 @@ body {
     display: none;
   }
 }
+.backdrop-milkshake {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 300ms ease, visibility 300ms ease;
+}
+
+.backdrop-milkshake.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-milkshake {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+  height: 968px;
+  transform: translateX(-20%);
+  border: 2px solid #EFD478;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal-milkshake .btn-close-milkshake {
+  border-style: none;
+  align-self: flex-end;
+  font-size: 30px;
+}
+.modal-milkshake h1 {
+  font-family: Seymour One;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+}
+.modal-milkshake form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal-milkshake form .milkshake-composition-div {
+  display: flex;
+  gap: 7px;
+}
+.modal-milkshake form .milkshake-composition-div .milkshake-composition-card {
+  margin-top: 20px;
+  width: 53px;
+  height: 72px;
+  border-radius: 40px;
+  border: 2px solid #D6936D;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-milkshake form .milkshake-composition-div .milkshake-composition-card .milkshake-composition-top-text {
+  background-color: #D6936D;
+  border-radius: 20px;
+  width: 43px;
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-milkshake form .milkshake-composition-div .milkshake-composition-card .milkshake-composition-top-text p {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 10px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0;
+}
+.modal-milkshake form .milkshake-composition-div .milkshake-composition-card h3 {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 10px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+}
+.modal-milkshake form .milkshake-ingredients-div {
+  margin-top: 30px;
+}
+.modal-milkshake form .milkshake-ingredients-div h1 {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+}
+.modal-milkshake form .milkshake-ingredients-div .milkshake-ingredients-text {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+.modal-milkshake form .milkshake-ingredients-div .milkshake-ingredients-text .milkshake-ingredients-name {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 176%;
+  letter-spacing: 4%;
+  text-align: start;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.modal-milkshake form .milkshake-ingredients-div .milkshake-ingredients-text .milkshake-ingredients-name p {
+  margin: 0;
+}
+.modal-milkshake form .milkshake-ingredients-div .milkshake-ingredients-text .milkshake-ingredients-kcal {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.modal-milkshake form .milkshake-ingredients-div .milkshake-ingredients-text .milkshake-ingredients-kcal h3 {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 176%;
+  letter-spacing: 4%;
+  text-align: end;
+  vertical-align: middle;
+  margin: 0;
+}
+.modal-milkshake form .name-input-milkshake {
+  width: 230px;
+  height: 42px;
+  padding: 5px;
+  border-style: none;
+  border: 1px solid #AEC6A5;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+.modal-milkshake form .phone-input-milkshake {
+  width: 230px;
+  height: 42px;
+  padding: 5px;
+  border-style: none;
+  border: 1px solid #AEC6A5;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+.modal-milkshake form .comment-input-milkshake {
+  width: 230px;
+  height: 74px;
+  padding: 5px;
+  border-style: none;
+  border: 1px solid #AEC6A5;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+.modal-milkshake form .submit-modal-milkshake {
+  width: 132px;
+  height: 42px;
+  background-color: #F8D24E;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  border-style: none;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .modal-milkshake {
+    width: 586px;
+    height: 996px;
+    transform: translateX(-24%);
+  }
+  .modal-milkshake h1 {
+    font-family: Seymour One;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .modal-milkshake form .milkshake-composition-div {
+    gap: 20px;
+  }
+  .modal-milkshake form .milkshake-composition-div .milkshake-composition-card {
+    width: 65px;
+    height: 90px;
+  }
+  .modal-milkshake form .milkshake-composition-div .milkshake-composition-card .milkshake-composition-top-text {
+    width: 53px;
+    height: 53px;
+    border-radius: 30px;
+  }
+  .modal-milkshake form .milkshake-composition-div .milkshake-composition-card .milkshake-composition-top-text p {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 12px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .modal-milkshake form .milkshake-composition-div .milkshake-composition-card h3 {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .modal-milkshake form .milkshake-ingredients-div h1 {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .modal-milkshake form .milkshake-ingredients-div .milkshake-ingredients-text {
+    gap: 300px;
+  }
+  .modal-milkshake form .name-input-milkshake {
+    width: 468px;
+    height: 42px;
+    margin-top: 50px;
+  }
+  .modal-milkshake form .phone-input-milkshake {
+    width: 468px;
+    height: 42px;
+  }
+  .modal-milkshake form .comment-input-milkshake {
+    width: 468px;
+    height: 84px;
+  }
+  .modal-milkshake form .submit-modal-milkshake {
+    width: 121px;
+    height: 42px;
+  }
+}
+@media (min-width: 1024px) {
+  .modal-milkshake {
+    transform: translateX(-1%);
+  }
+}
 .product-section {
   padding: 60px 20px;
   text-align: center;
