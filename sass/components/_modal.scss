@@ -1046,7 +1046,7 @@
     .modal-milkshake {
         width: 586px;
         height: 996px;
-        transform: translateX(-24%);
+        transform: translateX(-25%);
 
         h1 {
             font-family: Seymour One;
@@ -1141,6 +1141,319 @@
 
 @media(min-width:1024px) {
     .modal-milkshake {
+        transform: translateX(-1%);
+    }
+}
+
+.backdrop-ice-latte {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 300ms ease, visibility 300ms ease;
+}
+
+.backdrop-ice-latte.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal-ice-latte {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    height: 968px;
+    transform: translateX(-20%);
+    border: 2px solid $card-icecoffe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .btn-close-ice-latte {
+        border-style: none;
+        align-self: flex-end;
+        font-size: 30px;
+    }
+
+    h1 {
+        font-family: Seymour One;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .ice-latte-composition-div {
+            display: flex;
+            gap: 7px;
+
+            .ice-latte-composition-card {
+                margin-top: 20px;
+                width: 53px;
+                height: 72px;
+                border-radius: 40px;
+                border: 2px solid $card-icecoffe;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+                .ice-latte-composition-top-text {
+                    background-color: $card-icecoffe;
+                    border-radius: 20px;
+                    width: 43px;
+                    height: 43px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    p {
+                        font-family: Montserrat;
+                        font-weight: 500;
+                        font-style: Medium;
+                        font-size: 10px;
+                        line-height: 28px;
+                        letter-spacing: 0%;
+                        text-align: center;
+                        vertical-align: middle;
+                        margin: 0;
+                    }
+                }
+
+                h3 {
+                    font-family: Montserrat;
+                    font-weight: 400;
+                    font-style: Regular;
+                    font-size: 10px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    text-align: center;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        .ice-latte-ingredients-div {
+            margin-top: 30px;
+
+            h1 {
+                font-family: Montserrat;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 20px;
+                line-height: 28px;
+                letter-spacing: 0%;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            .ice-latte-ingredients-text {
+                display: flex;
+                gap: 40px;
+                justify-content: space-between;
+
+                .ice-latte-ingredients-name {
+                    font-family: Montserrat;
+                    font-weight: 400;
+                    font-style: Regular;
+                    font-size: 14px;
+                    line-height: 176%;
+                    letter-spacing: 4%;
+                    text-align: start;
+                    vertical-align: middle;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    p {
+                        margin: 0;
+                    }
+                }
+
+                .ice-latte-ingredients-kcal {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    h3 {
+                        font-family: Montserrat;
+                        font-weight: 400;
+                        font-style: Regular;
+                        font-size: 14px;
+                        line-height: 176%;
+                        letter-spacing: 4%;
+                        text-align: end;
+                        vertical-align: middle;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .name-input-ice-latte {
+            width: 230px;
+            height: 42px;
+            padding: 5px;
+            border-style: none;
+            border: 1px solid $card-icecream;
+            border-radius: 10px;
+            margin-top: 25px;
+        }
+
+        .phone-input-ice-latte {
+            width: 230px;
+            height: 42px;
+            padding: 5px;
+            border-style: none;
+            border: 1px solid $card-icecream;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .comment-input-ice-latte {
+            width: 230px;
+            height: 74px;
+            padding: 5px;
+            border-style: none;
+            border: 1px solid $card-icecream;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .submit-modal-ice-latte {
+            width: 132px;
+            height: 42px;
+            background-color: $accent-color;
+            font-family: Montserrat;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: middle;
+            border-style: none;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media(min-width:768px) {
+    .modal-ice-latte {
+        width: 586px;
+        height: 996px;
+        transform: translateX(-25%);
+
+        h1 {
+            font-family: Seymour One;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        form {
+
+            .ice-latte-composition-div {
+                gap: 20px;
+
+                .ice-latte-composition-card {
+                    width: 65px;
+                    height: 90px;
+
+                    .ice-latte-composition-top-text {
+                        width: 53px;
+                        height: 53px;
+                        border-radius: 30px;
+
+                        p {
+                            font-family: Montserrat;
+                            font-weight: 500;
+                            font-style: Medium;
+                            font-size: 12px;
+                            line-height: 28px;
+                            letter-spacing: 0%;
+                            text-align: center;
+                            vertical-align: middle;
+                        }
+                    }
+
+                    h3 {
+                        font-family: Montserrat;
+                        font-weight: 400;
+                        font-style: Regular;
+                        font-size: 12px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        text-align: center;
+                        vertical-align: middle;
+                    }
+                }
+            }
+
+            .ice-latte-ingredients-div {
+
+                h1 {
+                    font-family: Montserrat;
+                    font-weight: 500;
+                    font-style: Medium;
+                    font-size: 20px;
+                    line-height: 28px;
+                    letter-spacing: 0%;
+                    text-align: center;
+                    vertical-align: middle;
+                }
+
+                .ice-latte-ingredients-text {
+                    gap: 300px;
+                }
+            }
+
+            .name-input-ice-latte {
+                width: 468px;
+                height: 42px;
+                margin-top: 50px;
+            }
+
+            .phone-input-ice-latte {
+                width: 468px;
+                height: 42px;
+            }
+
+            .comment-input-ice-latte {
+                width: 468px;
+                height: 84px;
+            }
+
+            .submit-modal-ice-latte {
+                width: 121px;
+                height: 42px;
+            }
+        }
+    }
+}
+
+@media(min-width:1024px) {
+    .modal-ice-latte {
         transform: translateX(-1%);
     }
 }
