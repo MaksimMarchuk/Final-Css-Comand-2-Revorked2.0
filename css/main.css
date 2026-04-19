@@ -990,6 +990,72 @@ body {
   background-color: #84A178;
 }
 
+.place-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-menu {
+  font-size: 34px;
+  font-family: Seymour One;
+  color: #FCFCFC;
+}
+
+.lorem-menu {
+  font-size: 20px;
+  color: #FCFCFC;
+  width: 264px;
+}
+
+.btn-cafe {
+  justify-content: start;
+  font-size: 14px;
+  color: #131313;
+  width: 196px;
+  height: 42px;
+  background-color: #F8D24E;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.bi-chevron-right {
+  font-weight: bold;
+  font-family: 5px;
+  margin: 20px;
+}
+
+.image-menu {
+  width: 300px;
+  height: 196px;
+}
+
+.location-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-menu-direction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.place-menu {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.location-cafe {
+  display: flex;
+  justify-content: left;
+  margin: 0px 0px 0px -190px;
+}
+
 @media (min-width: 480px) {
   .comment-sect {
     height: 1211px;
@@ -999,8 +1065,28 @@ body {
     height: 204px;
     bottom: 40px;
   }
+  .image-menu {
+    width: 494px;
+    height: 288px;
+  }
+  .lorem-menu {
+    width: 462px;
+  }
+  .location-cafe {
+    display: flex;
+    justify-content: left;
+    margin: 0px 0px 0px -270px;
+  }
 }
 @media (min-width: 768px) {
+  .image-menu {
+    width: 616px;
+    height: 417px;
+    margin: 40px;
+  }
+  .place-menu {
+    display: none;
+  }
   .comment-sect {
     height: 1040;
   }
@@ -1113,6 +1199,22 @@ body {
   }
 }
 @media (min-width: 1200px) {
+  .image-menu {
+    width: 758px;
+    height: 503px;
+  }
+  .place-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .location-cafe {
+    padding: 0px 0px 0px 400px;
+  }
+  .text-menu {
+    font-size: 40px;
+  }
   .comment-sect {
     height: 1040;
   }
@@ -2055,18 +2157,15 @@ body {
 
 .hero-btn:hover {
   transform: translateY(-10px);
-  color: gray;
 }
 
 .hero-href {
   transition: 1500ms;
   transition-duration: 0.8s;
-  color: grey;
 }
 
 .hero-href:hover {
   transform: scale(1.1);
-  color: grey;
 }
 
 .arrow {
@@ -2076,7 +2175,6 @@ body {
 
 .arrow:hover {
   transform: rotate(360deg);
-  color: gray;
 }
 
 .location-first-btn {
@@ -2086,7 +2184,7 @@ body {
 
 .location-first-btn:hover {
   transform: scale(1.1);
-  color: grey;
+  color: #84A178;
 }
 
 .location-two-btn {
@@ -2096,7 +2194,7 @@ body {
 
 .location-two-btn:hover {
   transform: scale(1.1);
-  color: grey;
+  color: #EFD478;
 }
 
 .submit-modal-ice-cream {
@@ -2106,7 +2204,6 @@ body {
 
 .submit-modal-ice-cream:hover {
   transform: translateY(-10px);
-  color: grey;
 }
 
 .submit-modal {
@@ -2116,5 +2213,13 @@ body {
 
 .submit-modal:hover {
   transform: translateY(-10px);
-  color: grey;
+}
+
+.btn-cafe {
+  transition: 1500ms;
+  transition-duration: 1s;
+}
+
+.btn-cafe:hover {
+  transform: scale(1.1);
 }

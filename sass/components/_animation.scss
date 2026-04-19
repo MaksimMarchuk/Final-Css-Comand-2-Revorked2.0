@@ -87,16 +87,13 @@ transition-duration: 0.5s;
 }
 .hero-btn:hover {
     transform: translateY(-10px);
-    color: gray;
 }
 .hero-href {
     transition: 1500ms;
     transition-duration: 0.8s;
-    color: grey;
 }
 .hero-href:hover {
     transform: scale(1.1);
-    color: grey;
 }
 .arrow {
     transition: 1500ms;
@@ -104,7 +101,6 @@ transition-duration: 0.5s;
 }
 .arrow:hover {
     transform: rotate(360deg);
-    color: gray;
 }
 .location-first-btn {
         transition: 1500ms;
@@ -112,7 +108,7 @@ transition-duration: 0.5s;
 }
 .location-first-btn:hover {
     transform: scale(1.1);
-        color: grey;
+    color: $sections-background;
 }
 .location-two-btn {
     transition: 1500ms;
@@ -120,7 +116,7 @@ transition-duration: 0.5s;
 }
 .location-two-btn:hover {
     transform: scale(1.1);
-        color: grey;
+    color: $card-icecoffe;
 }
 .submit-modal-ice-cream {
     transition: 1500ms;
@@ -128,7 +124,6 @@ transition-duration: 0.5s;
 }
 .submit-modal-ice-cream:hover {
     transform: translateY(-10px);
-     color: grey;
 }
 .submit-modal {
 transition: 1500ms;
@@ -136,5 +131,11 @@ transition: 1500ms;
 }
 .submit-modal:hover {
     transform: translateY(-10px);
-        color: grey;
+}
+.btn-cafe {
+    transition: 1500ms;
+        transition-duration: 1s;
+}
+.btn-cafe:hover {
+        transform: scale(1.1);
 }
