@@ -506,7 +506,7 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-            <button class="modal-button">Buy now<i class="bi bi-chevron-right"></i></button>
+            <button class="modal-button" data-modal-open-7>Buy now<i class="bi bi-chevron-right"></i></button>
         </div>
     </div>
 
@@ -675,6 +675,57 @@
                 </label>
                 <div>
                     <button type="submit" class="submit-modal-ice-latte">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+        <div class="backdrop-products is-hidden" data-modal-7>
+        <div class="modal-products">
+            <button class="btn-close-products" data-modal-close-7><i class="bi bi-x"></i></button>
+            <h1>Buy now</h1>
+            <form>
+                <label>
+                    <div class="products-images">
+                        <div class="prewiew-products-icecream">
+                            <img src="./src/img/icecream-card.png" alt="">
+                            <div class="products-icecream-text-div">
+                                <p>ice cream</p>
+                            </div>
+                        </div>
+                        <div class="prewiew-products-coffee">
+                            <img src="./src/img/coffee-card.png" alt="">
+                            <div class="products-coffee-text-div">
+                                <p>ice coffee</p>
+                            </div>
+                        </div>
+                        <div class="prewiew-products-milkshakes">
+                            <img src="./src/img/milkshakes-card.png" alt="">
+                            <div class="products-milkshakes-text-div">
+                                <p>milkshake</p>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+                <label>
+                    <div>
+                        <input type="text" placeholder="Name" required class="name-input-products">
+                    </div>
+                </label>
+                <label>
+                    <div>
+                        <input type="tel" name="phone" pattern="^\+380\d{9}$" required placeholder="Phone"
+                            class="phone-input-products">
+                    </div>
+                </label>
+                <label>
+                    <div>
+                        <textarea name="comment" required placeholder="Comment"
+                            class="comment-input-products"></textarea>
+                    </div>
+                </label>
+                <div>
+                    <button type="submit" class="submit-modal">Submit</button>
                 </div>
             </form>
         </div>
