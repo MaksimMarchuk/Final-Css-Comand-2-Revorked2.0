@@ -13,6 +13,7 @@
 
             .nav-direction {
                 display: none;
+                cursor: pointer;
             }
 
             .nav-button {
@@ -24,6 +25,11 @@
                 color: white;
                 cursor: pointer;
                 margin-right: 15px;
+                transition-duration: 0.5s;
+
+                &:hover{
+                    color: rgb(170, 170, 170);
+                }
             }
         }
     }
@@ -89,6 +95,11 @@
                     text-decoration-style: solid;
                     text-decoration-thickness: 0%;
                     color: $accent-color;
+                    transition-duration: 0.6s;
+
+                    &:hover{
+                        color: #e2bb2f;
+                    }
                 }
             }
         }

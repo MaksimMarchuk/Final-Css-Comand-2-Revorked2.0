@@ -34,31 +34,31 @@
 }
 
 .nav-button {
-
-    transition-duration: 0.8s;
+    transition-duration: 0.5s;
 }
 
 .nav-button:hover {
     transform: translateY(-10px);
+    background-color: #e6c13b;
 }
 
 .arrow {
-    transition: 1500ms;
-    transition-duration: 2s;
+    transition-duration: 1.5s;
+    padding: 10px;
+    cursor: pointer;
 }
 
 .arrow:hover {
-    transform: scale(1.0);
-    transform: translateX(35px);
+    transform: rotate(360deg);
 }
 
 .button-explain {
-    transition: 1500ms;
     transition-duration: 0.5s;
 }
 
 .button-explain:hover {
-    transform: scale(1.2);
+    transform: translateY(-10px);
+    background-color: #e6c13b;
 }
 
 .image-mini {
@@ -70,22 +70,13 @@
     transform: scale(1.2);
 }
 
-.nav-logo {
-    transition: 1500ms;
-    transition-duration: 0.5s;
-}
-
-.nav-logo:hover {
-    transform: scale(1.2);
-}
-
 .bi-circle-fill {
-    transition: 1500ms;
     transition-duration: 0.5s;
+    cursor: pointer;
 }
 
 .bi-circle-fill:hover {
-    transform: scale(1.2);
+    transform: translateY(-10px);
 }
 
 .bi-list {
@@ -106,41 +97,22 @@
     transform: translateY(-10px);
 }
 
-.hero-href {
-    transition: 1500ms;
-    transition-duration: 0.8s;
-}
-
-.hero-href:hover {
-    transform: scale(1.1);
-}
-
-.arrow {
-    transition: 1500ms;
-    transition-duration: 1s;
-}
-
-.arrow:hover {
-    transform: rotate(360deg);
-}
-
 .location-first-btn {
     transition: 1500ms;
-    transition-duration: 1s;
+    transition-duration: 0.7s;
 }
 
 .location-first-btn:hover {
-    transform: scale(1.1);
+    transform: translateY(-10px);
     color: $sections-background;
 }
 
 .location-two-btn {
-    transition: 1500ms;
-    transition-duration: 0.8s;
+    transition-duration: 0.7s;
 }
 
 .location-two-btn:hover {
-    transform: scale(1.1);
+    transform: translateY(-10px);
     color: gray;
 }
 
@@ -169,4 +141,83 @@
 
 .btn-cafe:hover {
     transform: scale(1.1);
+}
+
+.modal-nav-menu{
+
+    ul{
+        li{
+
+            a{
+                transition-duration: 0.4s;
+
+                &:hover{
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+.modal-close-button{
+    transition-duration: 0.7s;
+
+    &:hover{
+        transform: rotate(180deg);
+        color: gray;
+    }
+}
+
+.btn-close-products{
+    transition-duration: 0.7s;
+
+    &:hover{
+        transform: rotate(180deg);
+        color: gray;
+    }
+}
+
+.btn-close-ice-cream{
+    transition-duration: 0.7s;
+
+    &:hover{
+        transform: rotate(180deg);
+        color: gray;
+    }
+}
+
+.btn-close-video{
+    transition-duration: 0.7s;
+
+    &:hover{
+        transform: rotate(180deg);
+        color: gray;
+    }
+}
+
+.btn-close-milkshake{
+    transition-duration: 0.7s;
+
+    &:hover{
+        transform: rotate(180deg);
+        color: gray;
+    }
+}
+
+.btn-close-ice-latte{
+    transition-duration: 0.7s;
+
+    &:hover{
+        transform: rotate(180deg);
+        color: gray;
+    }
+}
+
+.btn-close-milkshake{
+    transition-duration: 0.7s;
+
+    &:hover{
+        transform: rotate(180deg);
+        color: gray;
+    }
 }
