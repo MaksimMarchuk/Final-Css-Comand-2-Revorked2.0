@@ -2729,7 +2729,6 @@ body {
 }
 
 .header-button {
-  transition: 1500ms;
   transition-duration: 0.8s;
 }
 
@@ -2738,12 +2737,11 @@ body {
 }
 
 .nav-button {
-  transition: 1500ms;
   transition-duration: 0.8s;
 }
 
 .nav-button:hover {
-  transform: translateY(10px);
+  transform: translateY(-10px);
 }
 
 .arrow {
@@ -2840,12 +2838,12 @@ body {
 
 .location-two-btn {
   transition: 1500ms;
-  transition-duration: 1s;
+  transition-duration: 0.8s;
 }
 
 .location-two-btn:hover {
   transform: scale(1.1);
-  color: #EFD478;
+  color: gray;
 }
 
 .submit-modal-ice-cream {
