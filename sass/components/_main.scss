@@ -48,11 +48,23 @@
 .lorem-expalin {
     font-family: Montserrat;
     font-weight: 400;
-    font-size: 10px;
-    leading-trim: NONE;
+    width: 220px;
+    font-size: 12px;
+    line-height: 176%;
     letter-spacing: 4%;
     text-align: center;
     color: $base-text;
+
+    .text-cow {
+        font-family: Montserrat;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 12px;
+        line-height: 162%;
+        letter-spacing: 0%;
+        text-align: center;
+
+    }
 }
 
 .explain-dir {
@@ -153,71 +165,95 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 20px;
 }
-        .explain-div {
-            height: 1624px;
-            background-color: #84A178;
-        }
-    
-        .quantity-text {
+
+.explain-div {
+    height: 1624px;
+    background-color: #84A178;
+}
+
+.quantity-text {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 12px;
+    leading-trim: NONE;
+    line-height: 170%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: $background-main;
+}
+
+.text-directions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.explain-animal {
+    width: 280px;
+}
+
+.explain-main-text-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 480px) {
+    .explain-div {
+        height: 1624px;
+        background-color: #84A178;
+    }
+
+    .quantity-text {
+        font-family: Montserrat;
+        font-weight: 400;
+        font-size: 12px;
+        leading-trim: NONE;
+        line-height: 170%;
+        letter-spacing: 0%;
+        text-align: center;
+        color: $background-main;
+    }
+
+    .text-directions {
+        text-align: start;
+        width: 336px;
+
+    }
+
+    .explain-animal {
+        width: 280px;
+    }
+
+    .explain-main-text-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lorem-expalin {
+        font-family: Montserrat;
+        font-weight: 400;
+        width: 220px;
+        font-size: 12px;
+        line-height: 176%;
+        letter-spacing: 4%;
+        text-align: center;
+        color: $base-text;
+
+        .text-cow {
             font-family: Montserrat;
             font-weight: 400;
+            font-style: Regular;
             font-size: 12px;
             leading-trim: NONE;
-            line-height: 170%;
+            line-height: 162%;
             letter-spacing: 0%;
             text-align: center;
-            color: $background-main;
         }
-    
-        .text-directions {
-            text-align: start;
-            width: 220px;
-    
-        }
-    
-        .explain-animal {
-            width: 280px;
-        }
-    
-        .explain-main-text-div {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-@media (min-width: 480px) {
-        .explain-div {
-                height: 1624px;
-                background-color: #84A178;
-            }
-        
-            .quantity-text {
-                font-family: Montserrat;
-                font-weight: 400;
-                font-size: 12px;
-                leading-trim: NONE;
-                line-height: 170%;
-                letter-spacing: 0%;
-                text-align: center;
-                color: $background-main;
-            }
-        
-            .text-directions {
-                text-align: start;
-                width: 336px;
-        
-            }
-        
-            .explain-animal {
-                width: 280px;
-            }
-        
-            .explain-main-text-div {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
+    }
 }
 
 @media (min-width: 768px) {
@@ -247,6 +283,23 @@
 
     .lorem-expalin {
         text-align: start;
+        font-family: Montserrat;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 176%;
+        letter-spacing: 4%;
+        width: 334px;
+
+        .text-cow {
+            font-family: Montserrat;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 12px;
+            leading-trim: NONE;
+            line-height: 194%;
+            letter-spacing: 4%;
+            text-align: start;
+        }
     }
 
     .explain-animal {
@@ -262,6 +315,7 @@
         display: flex;
         justify-content: start;
     }
+
     .lorem-expalin {
         display: flex;
         justify-content: center;
@@ -523,23 +577,26 @@
         }
     }
 }
-.place-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+
 .text-menu {
-    font-size: 34px;
+    font-size: 24px;
     font-family: Seymour One;
     color: $background-main;
 }
+
+.text-position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .lorem-menu {
     font-size: 20px;
     color: $background-main;
     width: 264px;
-    
+
 }
+
 .btn-cafe {
     justify-content: start;
     font-size: 14px;
@@ -550,36 +607,18 @@
     border: none;
     border-radius: 10px;
     font-weight: bold;
+
+    .bi-chevron-right {
+        margin-left: 10px;
+        -webkit-text-stroke: 1px black;
+    }
 }
-.bi-chevron-right {
-    font-weight: bold;
-    font-family: 5px;
-    margin: 20px;
-}
+
 .image-menu {
-    width: 300px;
-    height: 196px;
+    width: 283px;
+    height: 188px;
 }
-.location-menu {
-        display: flex;
-            justify-content: center;
-            align-items: center;
-}
-.image-menu-direction {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.place-menu {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-.location-cafe {
-    display: flex;
-    justify-content: left;
-    margin: 0px 0px 0px -190px;
-}
+
 @media (min-width:480px) {
     .comment-sect {
         height: 1211px;
@@ -590,29 +629,64 @@
             bottom: 40px;
         }
     }
+
     .image-menu {
-        width: 494px;
+        width: 434px;
         height: 288px;
     }
+
     .lorem-menu {
         width: 462px;
     }
-        .location-cafe {
-            display: flex;
-            justify-content: left;
-            margin: 0px 0px 0px -270px;
-        }
+
+    .location-cafe {
+        display: flex;
+        justify-content: left;
+    }
+
+    .image-menu-direction {
+        display: flex;
+        justify-content: center;
+    }
+
+    .text-position {
+        display: flex;
+        justify-content: start;
+        padding: 20px 20px 0px 20px;
+    }
+
+    .lorem-position {
+        display: flex;
+        justify-content: start;
+        padding: 5px 0px 0px 20px;
+    }
+
+    .location-cafe {
+        display: flex;
+        justify-content: start;
+        padding: 5px 0px 0px 20px;
+    }
 }
 
 @media(min-width:768px) {
     .image-menu {
-        width: 616px;
+        width: 624px;
         height: 417px;
-        margin: 40px;
     }
+
+    .text-menu {
+        font-size: 40px;
+    }
+
+    .lorem-menu {
+        font-size: 20px;
+    }
+
     .place-menu {
-        display: none;
+        display: flex;
+        align-items: center;
     }
+
     .comment-sect {
         height: 1040;
 
@@ -624,7 +698,6 @@
         }
 
         .comment-div {
-
             .comment-text-div {
                 width: 705px;
                 height: 138px;
@@ -757,18 +830,22 @@
         width: 758px;
         height: 503px;
     }
+
     .place-menu {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
     }
+
     .location-cafe {
         padding: 0px 0px 0px 400px;
     }
+
     .text-menu {
         font-size: 40px;
     }
+
     .comment-sect {
         height: 1040;
 
